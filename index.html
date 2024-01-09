@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Téléchargement</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #download-btn {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px; /* Espace entre l'image et le bouton */
+        }
+
+        #download-btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <img src="BTransfert.png" alt="Description de l'image">
+
+    <p>Appuie sur le bouton ci-dessous pour télécharger BTransfert :</p>
+
+    <a id="download-btn" href="BTransfert.exe" download="BTransfert.exe">Télécharger</a>
+</body>
+</html>
