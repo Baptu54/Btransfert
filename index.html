@@ -19,7 +19,7 @@
             align-items: center;
         }
 
-        #download-btn {
+        #download-btn, #beta-btn-windows, #beta-btn-android {
             background-color: #000;
             color: #fff;
             border: 2px solid #fff;
@@ -27,30 +27,21 @@
             font-size: 16px;
             cursor: pointer;
             text-decoration: none;
-            display: inline-block;
             margin-top: 20px; /* Espace entre l'image et le bouton */
+            display: inline-block;
         }
 
-        #download-btn:hover {
+        #download-btn:hover, #beta-btn-windows:hover, #beta-btn-android:hover {
             background-color: #fff;
             color: #000;
         }
-        #beta-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #000;
-            color: #fff;
-            border: 2px solid #fff;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
+
+        .description {
+            margin-top: 20px;
         }
 
-        #beta-btn:hover {
-            background-color: #fff;
-            color: #000;
+        .icon {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -59,10 +50,16 @@
 
     <img src="application.png" alt="application">
 
+    <p class="description">BTransfert est une application de transfert de fichiers sécurisée et rapide.</p>
+
     <p>Appuie sur le bouton ci-dessous pour télécharger BTransfert (Windows) :</p>
 
-    <a id="download-btn" href="BTransfert.exe" download="BTransfert.exe">Télécharger</a>
-    
-    <a id="beta-btn" href="BETATransfert.exe" download="BTransfert.exe">Bêta</a>
+    <a id="download-btn" href="BTransfert.exe" download="BTransfert.exe"><img class="icon" src="windows_icon.png" alt="Windows Icon">Télécharger</a>
+
+    <p>Bêta Versions :</p>
+
+    <a id="beta-btn-windows" href="BETATransfertWindows.exe" download="BTransfertWindows.exe"><img class="icon" src="windows_icon.png" alt="Windows Icon">Bêta Windows</a>
+
+    <a id="beta-btn-android" href="BETATransfertAndroid.apk" download="BTransfertAndroid.apk"><img class="icon" src="android_icon.png" alt="Android Icon">Bêta Android</a>
 </body>
 </html>
